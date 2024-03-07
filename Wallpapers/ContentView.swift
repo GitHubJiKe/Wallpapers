@@ -19,14 +19,25 @@ struct ImageResult :Decodable{
     var id:String;
 }
 
+func getAPIKey()->String{
+    guard let filePath = Bundle.main.path(forResource: "Config", ofType: "plist") else {
+        fatalError("Couldn't find file 'Config.plist'.")
+    }
+    let plist = NSDictionary(contentsOfFile: filePath)
+    guard let value = plist?.object(forKey: "API_KEY") as? String else {
+        fatalError("Couldn't find key 'API_KEY' in 'Config.plist'.")
+    }
+    return value
+}
+
 class ViewModel:ObservableObject{
     @Published var images:[ImageResult]=[]
     @Published var isLoading = false
     
     func fetchImages(){
         isLoading = true
-        let url = URL(string:"https://api.unsplash.com/photos/?client_id=E3_ydb1AJ1-bJmqyNsfO85Rya5HAFnag2vLpdVGPYRA&order_by=ORDER&per_page=30")!
-        
+        let url = URL(string:"https://api.unsplash.com/photos?client_id=\(getAPIKey())&order_by=popular&per_page=10&quantity=30&page=1")!
+        print(url)
         URLSession.shared.dataTask(with: url) { data, response, error in
                   DispatchQueue.main.async {
                       self.isLoading = false
@@ -35,6 +46,7 @@ class ViewModel:ObservableObject{
                               // 解码 JSON 数据
                               let decodedImages = try JSONDecoder().decode([ImageResult].self, from: data)
                               self.images = decodedImages
+                              print(self.images.endIndex)
                           } catch {
                               print("Error decoding JSON: \(error)")
                           }

@@ -14,6 +14,8 @@
 		329A9E072B997F7200274E80 /* WallpapersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A9E062B997F7200274E80 /* WallpapersTests.swift */; };
 		329A9E112B997F7200274E80 /* WallpapersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A9E102B997F7200274E80 /* WallpapersUITests.swift */; };
 		329A9E132B997F7200274E80 /* WallpapersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A9E122B997F7200274E80 /* WallpapersUITestsLaunchTests.swift */; };
+		329A9E202B99E0AE00274E80 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 329A9E1F2B99E0AE00274E80 /* Config.plist */; };
+		329A9E232B99E43B00274E80 /* UnsplashPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 329A9E222B99E43B00274E80 /* UnsplashPhotoPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		329A9E0C2B997F7200274E80 /* WallpapersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		329A9E102B997F7200274E80 /* WallpapersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpapersUITests.swift; sourceTree = "<group>"; };
 		329A9E122B997F7200274E80 /* WallpapersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpapersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		329A9E1F2B99E0AE00274E80 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329A9E232B99E43B00274E80 /* UnsplashPhotoPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 		329A9DE92B997F6E00274E80 = {
 			isa = PBXGroup;
 			children = (
+				329A9E1F2B99E0AE00274E80 /* Config.plist */,
 				329A9DF42B997F6F00274E80 /* Wallpapers */,
 				329A9E052B997F7200274E80 /* WallpapersTests */,
 				329A9E0F2B997F7200274E80 /* WallpapersUITests */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = Wallpapers;
+			packageProductDependencies = (
+				329A9E222B99E43B00274E80 /* UnsplashPhotoPicker */,
+			);
 			productName = Wallpapers;
 			productReference = 329A9DF22B997F6F00274E80 /* Wallpapers.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 329A9DE92B997F6E00274E80;
+			packageReferences = (
+				329A9E212B99E43B00274E80 /* XCRemoteSwiftPackageReference "unsplash-photopicker-ios" */,
+			);
 			productRefGroup = 329A9DF32B997F6F00274E80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				329A9DFD2B997F7100274E80 /* Preview Assets.xcassets in Resources */,
+				329A9E202B99E0AE00274E80 /* Config.plist in Resources */,
 				329A9DFA2B997F7100274E80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		329A9E212B99E43B00274E80 /* XCRemoteSwiftPackageReference "unsplash-photopicker-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/unsplash/unsplash-photopicker-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		329A9E222B99E43B00274E80 /* UnsplashPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329A9E212B99E43B00274E80 /* XCRemoteSwiftPackageReference "unsplash-photopicker-ios" */;
+			productName = UnsplashPhotoPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 329A9DEA2B997F6E00274E80 /* Project object */;
 }
