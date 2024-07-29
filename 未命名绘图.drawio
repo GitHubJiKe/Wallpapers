@@ -1,9 +1,45 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.5">
   <diagram name="第 1 页" id="AFKJ21kr0fHZg-3bJ2xY">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-2" value="Info" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-3" value="&lt;span style=&quot;white-space: pre;&quot; data-slate-fragment=&quot;JTVCJTdCJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIyaWQlMjIlM0ElMjJleHJFa1pkSld6JTIyJTJDJTIycGFyYUlkeCUyMiUzQTAlMkMlMjJzcmMlMjIlM0ElMjJjb25jbHVzaW9uJTIyJTJDJTIyZHN0JTIyJTNBJTIyJUU3JUJCJTkzJUU4JUFFJUJBJTIyJTJDJTIybWV0YWRhdGElMjIlM0ElMjIlMjIlMkMlMjJtZXRhRGF0YSUyMiUzQSU1QiU1RCUyQyUyMnRleHQlMjIlM0ElMjJjb25jbHVzaW9uJTIyJTdEJTVEJTdEJTVE&quot;&gt;Conclusion&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-4" value="List" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="190" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-5" value="Table" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="320" width="390" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-6" value="SearchPane" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="60" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="yxGaQAEZh4XnH86Izl1s-7" target="yxGaQAEZh4XnH86Izl1s-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-7" value="Store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="790" y="240" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-8" value="searchParams" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-9" value="rankList" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-10" value="tableList" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-11" value="detailData" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yxGaQAEZh4XnH86Izl1s-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="920" y="140" width="20" height="350" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
